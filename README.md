@@ -1,2 +1,2 @@
 # ActiveCampaign
-Asp.Net wrapper for ActiveCampaign
+ASP.NET wrapper for the ActiveCampaign API
