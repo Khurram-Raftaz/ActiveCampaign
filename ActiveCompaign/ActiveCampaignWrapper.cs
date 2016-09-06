@@ -17,7 +17,7 @@ public class ActiveCampaignWrapper
     public string AddContactToActiveCompaign(string firstName, string lastName, string email, string serviceType)
     {
         string response = "";
-        ActiveCampaignConnectorService connection = new ActiveCampaignConnectorService("https://qualitycompliancesystems.api-us1.com", "e4f341aba40906c3bb4f67dc12dfc057c4ae422278d0970bef91e78a61e9244e662604a1");
+        ActiveCampaignConnectorService connection = new ActiveCampaignConnectorService("yourApiUrl", "ApiKey");
         bool testConnection = connection.TestConnection();
         if (testConnection)
         {
@@ -33,7 +33,7 @@ public class ActiveCampaignWrapper
     public string UnSubscribeFromActiveCompaign(string email, string serviceType)
     {
         string response = "";
-        ActiveCampaignConnectorService connection = new ActiveCampaignConnectorService("https://qualitycompliancesystems.api-us1.com", "e4f341aba40906c3bb4f67dc12dfc057c4ae422278d0970bef91e78a61e9244e662604a1");
+        ActiveCampaignConnectorService connection = new ActiveCampaignConnectorService("yourApiUrl", "ApiKey");
         bool testConnection = connection.TestConnection();
         if (testConnection)
         {
@@ -49,7 +49,7 @@ public class ActiveCampaignWrapper
     public string SubscribeToActiveCompaign(string email, string serviceType)
     {
         string response = "";
-        ActiveCampaignConnectorService connection = new ActiveCampaignConnectorService("https://qualitycompliancesystems.api-us1.com", "e4f341aba40906c3bb4f67dc12dfc057c4ae422278d0970bef91e78a61e9244e662604a1");
+        ActiveCampaignConnectorService connection = new ActiveCampaignConnectorService("yourApiUrl", "ApiKey");
         bool testConnection = connection.TestConnection();
         if (testConnection)
         {
